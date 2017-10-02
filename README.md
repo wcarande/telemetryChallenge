@@ -42,13 +42,18 @@ Use any language you are comfortable with.
     wattsPerM2 = photonsPerSecondPerCm2 * 1e2 * 1e2 * energyPerPhoton [watts/m^2]
  
  
-# Files
-All files are comma separated with a one line header.
+# Files and Directories
+All data files are comma separated with a one line header.
 
-* detectorTemp.txt : in degrees Celsius. It is roughly sampled at 1 second.
-* distanceAndDoppler.txt : These are the corrections used to adjust for the changing distance of the spacecraft and it's changing velocity relative to the sun.
-* instrumentTelemetry.txt : Includes grating position and measured detector counts. It is sampled proportional to the current integration time. (keep in mind that this is measured counts which which could be dependent on other variables)    
-* integrationTime.txt : This is the current set integration time (ms) of the instrument. Assume the value is constant until there is a new value.
-* plans.txt : This file includes the experiment names with start/end times. You can find the time ranges of the plans of interest her. [start, end)
-* referenceSpectrum.txt : This is a reference spectrum with accurate wavelengths. The current irradiance measurements will be within 10% of this spectrum.
+* dataFiles: Files containing the data for the challenge
+    * detectorTemp.txt : in degrees Celsius. It is roughly sampled at 1 second.
+    * distanceAndDoppler.txt : These are the corrections used to adjust for the changing distance of the spacecraft and it's changing velocity relative to the sun.
+    * instrumentTelemetry.txt : Includes grating position and measured detector counts. It is sampled proportional to the current integration time. (keep in mind that this is measured counts which which could be dependent on other variables)    
+    * integrationTime.txt : This is the current set integration time (ms) of the instrument. Assume the value is constant until there is a new value.
+    * plans.txt : This file includes the experiment names with start/end times. You can find the time ranges of the plans of interest her. [start, end)
+    * referenceSpectrum.txt : This is a reference spectrum with accurate wavelengths. The current irradiance measurements will be within 10% of this spectrum.
+* py: Directory with Jupyter notebook solution
+    * .ipynb_checkpoints: Checkpoints created by Jupyter
+    * codingChallenge.ipynb: Jupyter notebook with solution
+    
  
